@@ -54,8 +54,8 @@ export class AddCommentComponent implements OnInit {
   }
 
   addPost() {
-    this.contract();
-    if (this.postBody && this.inputFile.size < 2000000) {
+    // this.contract();
+    if (this.postBody) {
       this.pid = this.afs.createId();
       const newPost = {
         body: this.postBody,
@@ -73,8 +73,8 @@ export class AddCommentComponent implements OnInit {
   processImage(event) {
     this.inputFile = event.target.files[0];
     this.filename = this.inputFile.name;
-    if (this.inputFile.size > 2000000) {
-      this.filename = 'Max Filesize 2Mb!';
+    if (this.inputFile.size > 20000000) {
+      this.filename = 'Max Filesize 20Mb!';
     } else {
       if (this.filename.length > 20) {
         this.filename = this.filename.slice(0, 20) + '...' + this.filename.slice(this.filename.length - 3);

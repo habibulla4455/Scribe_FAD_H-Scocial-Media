@@ -5,6 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start2": "ng serve -o --port=4202",
+    "start3": "ng serve -o --port=4204",
+    "start4": "ng serve -o --port=4205",
+    "start5": "ng serve -o --port=4206",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

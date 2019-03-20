@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyBFG5XAYniXLE0oysz9m2KGKudkWWUuVFo',
-    authDomain: 'scribe-angular.firebaseapp.com',
-    databaseURL: 'https://scribe-angular.firebaseio.com',
-    projectId: 'scribe-angular',
-    storageBucket: 'gs://scribe-angular.appspot.com',
-    messagingSenderId: '1029376142564'
+    apiKey: "AIzaSyDSs2ptd2Dzi9C5XxNGffXy-ushVBabyOM",
+    authDomain: "habib-e7999.firebaseapp.com",
+    databaseURL: "https://habib-e7999.firebaseio.com",
+    projectId: "habib-e7999",
+    storageBucket: "habib-e7999.appspot.com",
+    messagingSenderId: "593669101940"
   }
 };

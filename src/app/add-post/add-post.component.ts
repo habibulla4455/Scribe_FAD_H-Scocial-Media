@@ -80,7 +80,7 @@ export class AddPostComponent implements OnInit {
   addPost() {
     this.contract();
     if (!this.type) {
-      if (this.postBody || this.inputFile.size < 2000000) {
+      if (this.postBody || this.inputFile.size <= 2000000) {
         this.pid = this.afs.createId();
         const newPost = {
           body: this.postBody,
